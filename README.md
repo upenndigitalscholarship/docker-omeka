@@ -23,6 +23,9 @@ $ git submodule init
 $ git submodule update --recursive
 $ cd omeka-src
 $ git checkout v2.5
+$ cd ..
+$ cp config/omeka/db.ini omeka-src
+$ cp config/omeka/config.ini omeka-src
 ```
 
 **3 - Launch the containers**
