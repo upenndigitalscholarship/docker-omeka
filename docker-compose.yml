@@ -2,8 +2,7 @@ version: '2'
 
 services:
     web:
-        # build: .
-        image: aparticula/omeka
+        build: https://github.com/upenndigitalscholarship/docker-omeka
         container_name: omeka_web
         volumes:
             - ./conf/nginx.conf:/etc/nginx/nginx.conf
