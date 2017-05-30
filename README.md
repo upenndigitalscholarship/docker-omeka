@@ -12,15 +12,20 @@ This starter kit aims to run a fresh Omeka framwork in a sec build on top of:
 
 ## Init
 **1 - Clone this repo**
-```
+```sh
 $ git clone https://github.com/aparticula/docker-omeka
+$ cd docker-omeka
 ```
 
-**2 - Get a release from Omeka**
+**2 - Initialize the Omeka submodule**
 ```sh
-$ git clone https://github.com/omeka/Omeka/ omeka-src
+$ git submodule init
+$ git submodule update --recursive
 $ cd omeka-src
 $ git checkout v2.5
+$ cd ..
+$ cp config/omeka/db.ini omeka-src
+$ cp config/omeka/config.ini omeka-src
 ```
 
 **3 - Launch the containers**
@@ -30,7 +35,10 @@ $ docker-compose up -d
 ```
 
 **4 - Create an omeka database**
-```
+```sh
+$ # Wait for step 3 to complete. Once you see "Creating omeka_web", wait
+# for about 60 seconds more; set-up is not yet complete. After the pause
+# that refreshes...
 $ docker exec -it omeka_db mysql -uroot -proot -e "create database omeka"
 ```
 

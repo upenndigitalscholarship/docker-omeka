@@ -49,6 +49,9 @@ RUN rm -rf /app/*
 VOLUME /app
 WORKDIR /app
 
+COPY conf/omeka/db.ini /app/db.ini
+COPY conf/omeka/config.ini /app/config.ini
+
 EXPOSE 80
 
 CMD ["/usr/bin/supervisord"]
