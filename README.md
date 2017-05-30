@@ -33,7 +33,9 @@ $ docker-compose up -d
 
 **4 - Create an omeka database**
 ```sh
-$ # Wait for about 60 seconds for set-up to complete. Then...
+$ # Wait for step 3 to complete. Once you see "Creating omeka_web", wait
+# for about 60 seconds more; set-up is not yet complete. After the pause
+# that refreshes...
 $ docker exec -it omeka_db mysql -uroot -proot -e "create database omeka"
 ```
 
