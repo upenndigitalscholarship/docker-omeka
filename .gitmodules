@@ -1,0 +1,3 @@
+[submodule "omeka-src"]
+	path = omeka-src
+	url = https://github.com/omeka/Omeka/
