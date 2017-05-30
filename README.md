@@ -13,7 +13,7 @@ This starter kit aims to run a fresh Omeka framwork in a sec build on top of:
 ## Init
 **1 - Clone this repo**
 ```sh
-git clone https://github.com/aparticula/docker-omeka
+git clone https://github.com/upenndigitalscholarship/docker-omeka
 cd docker-omeka
 ```
 
