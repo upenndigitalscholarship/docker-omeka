@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-MAINTAINER François Fleur <francois@aparticula.com>
+MAINTAINER Scott Enderle <enderlej@upenn.edu>
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
